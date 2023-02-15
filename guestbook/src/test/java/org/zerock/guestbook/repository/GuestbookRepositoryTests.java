@@ -12,6 +12,7 @@ import org.springframework.data.domain.Sort;
 import org.zerock.guestbook.entity.Guestbook;
 import org.zerock.guestbook.entity.QGuestbook;
 
+import java.util.Optional;
 import java.util.stream.IntStream;
 
 @SpringBootTest
@@ -33,6 +34,21 @@ public class GuestbookRepositoryTests {
             System.out.println(guestbookRepository.save(guestbook));
         });
     }
+
+    @Test
+    public void updateTest(){
+        Optional<Guestbook> result = guestbookRepository.findById(300L);
+
+        if(result.isPresent()){
+            Guestbook guestbook = result.get();
+
+            guestbook.changeTitle("Change title");
+            guestbook.changeContent("Change content");
+
+            guestbookRepository.save(guestbook);
+        }
+    }
+
 
     @Test
     public void testQuery1() {

@@ -2,63 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="954a941a-2f5a-4d07-a8ee-c4cd2f7658e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../spring/.idea/spring.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/annotation/Decode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/annotation/Timer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/DecodeAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/ParameterAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/TimerAop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/controller/ResApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/dto/User2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Base64Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/IEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/UrlEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/ioc/src/main/resources/com/company/ioc/ioc/hello-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/java/dto/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/java/dto/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/sample.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex1/src/main/java/com/example/ex1/controller/SampleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex2/src/main/java/org/zerock/ex2/entity/Memo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex2/src/main/java/org/zerock/ex2/repository/MemoRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex2/src/test/java/org/zerock/ex2/repository/MemoRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/java/org/zerock/ex3/controller/SampleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/java/org/zerock/ex3/dto/SampleDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/fragments/fragment1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/fragments/fragment2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/fragments/fragment3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/layout/layout1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/sample/ex1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/sample/ex2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/sample/ex3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/sample/exLayout1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/sample/exLayout2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ex3/src/main/resources/templates/sample/exLink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2KfhfR8anFqRNFAhzrkqWx7Ycl7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,7 +23,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -90,8 +36,12 @@
       <option name="presentableId" value="Default" />
       <updated>1674371687894</updated>
       <workItem from="1674371701182" duration="28000" />
+      <workItem from="1676366225837" duration="99000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
