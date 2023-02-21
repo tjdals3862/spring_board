@@ -14,7 +14,7 @@ public class MemberService {
 
     private MemberRepository memberRepository;
 
-    public MemberService(MemoryMemberRepository memberRepository) {
+    public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
 
