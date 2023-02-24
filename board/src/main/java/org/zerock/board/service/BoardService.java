@@ -1,5 +1,6 @@
 package org.zerock.board.service;
 
+
 import org.zerock.board.dto.BoardDTO;
 import org.zerock.board.dto.PageRequestDTO;
 import org.zerock.board.dto.PageResultDTO;
@@ -14,7 +15,12 @@ public interface BoardService {
 
     BoardDTO get(Long bno);
 
+    void removeWithReplies(Long bno);
+
+    void modify(BoardDTO boardDTO);
+
     default Board dtoToEntity(BoardDTO dto){
+
         Member member = Member.builder().email(dto.getWriterEmail()).build();
 
         Board board = Board.builder()
@@ -26,8 +32,8 @@ public interface BoardService {
         return board;
     }
 
-    //BoardSerivce 인터페이스에 추가하는 entityToDTO()
-    default BoardDTO entityToDTO(Board board, Member member ,Long replyCount) {
+    default BoardDTO entityToDTO(Board board, Member member, Long replyCount) {
+
         BoardDTO boardDTO = BoardDTO.builder()
                 .bno(board.getBno())
                 .title(board.getTitle())
@@ -36,12 +42,10 @@ public interface BoardService {
                 .modDate(board.getModDate())
                 .writerEmail(member.getEmail())
                 .writerName(member.getName())
-                .replyCount(replyCount.intValue())
+                .replyCount(replyCount.intValue()) //int로 처리하도록
                 .build();
+
         return boardDTO;
+
     }
-
-
-
-
 }
