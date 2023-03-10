@@ -5,14 +5,37 @@
   <title>Title</title>
 </head>
 <body>
-<h2>로그인 페이지</h2>
+<h2>게시판 페이지</h2>
 
-<ul>
-  <li th:text="${id}">name</li>
-  <li th:text="${name}">name</li>
-  <li th:text="${email}">name</li>
-  <li th:text="${password}">name</li>
-</ul>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">bno</th>
+    <th scope="col">Title</th>
+    <th scope="col">Writer</th>
+    <th scope="col">Regdate</th>
+  </tr>
+  </thead>
+  <tbody>
+
+  <tr th:each="dto : ${result.dtoList}" >
+    <th scope="row">
+      <a th:href="@{/board/read(bno = ${dto.bno},
+                    page= ${result.page},
+                    type=${pageRequestDTO.type} ,
+                    keyword = ${pageRequestDTO.keyword})}">
+        [[${dto.bno}]]
+      </a>
+    </th>
+    <td>[[${dto.title}]]]</td>
+    <td>[[${dto.writerName}]] <small>[[${dto.writerEmail}]]</small> </td>
+    <td>[[${#temporals.format(dto.regDate, 'yyyy/MM/dd')}]]</td>
+  </tr>
+  </tbody>
+</table>
+
+
+
 
 
 </body>

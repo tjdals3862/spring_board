@@ -11,4 +11,8 @@
         INSERT INTO member VALUES (#{id},#{email},#{name},#{password})
     </insert>
 
+    <select id="boardList" resultType="list">
+        select * from board
+    </select>
+
 </mapper>

@@ -2,7 +2,9 @@ package com.example.test_board.controller;
 
 
 import com.example.test_board.domain.Member;
+import com.example.test_board.mapper.BoardMapper;
 import com.example.test_board.mapper.MapperTest;
+import com.example.test_board.service.BoardServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,38 +22,23 @@ import java.util.List;
 public class BoardController {
 
     @Autowired
-    private MapperTest mapper;
+    BoardServiceImpl boardService;
 
     @GetMapping("/")
     public String index() {
         log.info("login 페이지");
-        return "redirect:/board/login";
+        return "redirect:/board/list";
     }
 
-    @GetMapping("/member")
+    @GetMapping("/board")
     public String login(Model model) {
-        return "board/member";
+        log.info("게시물 전체 조회");
+        boardService.boardList();
+
+
+        return "board/list";
     }
 
-    @GetMapping("/mybatisAnnotation")
-    public String memberList(Model model){
-        log.info(mapper.getList());
-        List<Member> list = mapper.getList();
-        model.addAttribute("name" ,list.get(0).getId());
 
-        return "board/member";
-        //return mapper.getList();
-    }
-
-    @GetMapping("/mybatisXml")
-    public String memberList2(Model model){
-        log.info(mapper.getXmlList());
-        List<Member> list = mapper.getXmlList();
-        model.addAttribute("id" ,list.get(0).getId());
-        model.addAttribute("name" ,list.get(0).getName());
-        model.addAttribute("email" ,list.get(0).getEmail());
-        model.addAttribute("password" ,list.get(0).getPassword());
-        return "board/member";
-    }
 
 }
