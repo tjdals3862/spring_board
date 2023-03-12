@@ -1,11 +1,11 @@
 package com.example.test_board.service;
 
-import com.example.test_board.domain.BoardList;
-import com.example.test_board.domain.BoardResult;
+import com.example.test_board.domain.Board;
 import com.example.test_board.mapper.BoardMapper;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -17,10 +17,34 @@ public class BoardServiceImpl implements BoardService{
     BoardMapper boardMapper;
 
     @Override
-    public List<BoardList> boardList() {
-        List<BoardList> boardList = null;
+    public List<Board> boardList() {
+        List<Board> boardList = null;
         boardList =  boardMapper.boardList();
         log.info("boardList : "+ boardList);
         return boardList;
+    }
+
+    @Override
+    public int boardAdd(Board board) {
+        int result = 0;
+        result = boardMapper.boardAdd(board);
+        log.info("boardAdd : " + result);
+        return result;
+    }
+
+    @Override
+    public int boardUpdate(Board board) {
+        int result = 0;
+        result = boardMapper.boardUpdate(board);
+        log.info("boardUpdate : " + result);
+        return result;
+    }
+
+    @Override
+    public int boardDelete(int bno) {
+        int result = 0;
+        result = boardMapper.boardDelete(bno);
+        log.info("boardDelete : " + result);
+        return result;
     }
 }

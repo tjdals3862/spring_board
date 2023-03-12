@@ -4,14 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe6717ca-7729-4f51-828f-ac04d17bffe5" name="Changes" comment="" />
+    <list default="true" id="fe6717ca-7729-4f51-828f-ac04d17bffe5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../inflearn/스프링핵심원리/src/test/java/hello/core/inflearn/beanfind/ApplicationContextExtendsFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../inflearn/스프링핵심원리/src/test/java/hello/core/inflearn/beanfind/ApplicationContextSameBeanFindTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guestbook/src/main/resources/templates/guestbook/read.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guestbook/src/main/resources/templates/guestbook/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/example/hello/dto/UserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/example/hello/ioc/ApplicationContextProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/example/hello/ioc/Base64Encoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/example/hello/ioc/Encoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/example/hello/ioc/IEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/example/hello/ioc/IocApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hello/src/main/java/com/example/hello/ioc/UrlEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/annotation/Decode.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/annotation/Decode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/annotation/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/annotation/Timer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/DecodeAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/DecodeAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/ParameterAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/ParameterAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/TimerAop.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/aop/TimerAop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/controller/ResApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/controller/ResApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/dto/User2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/aop/src/main/java/com/example/aop/dto/User2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Base64Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Base64Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Encoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Encoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/IEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/IEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/UrlEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/ioc/src/main/java/com/company/ioc/ioc/UrlEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/object-mapper/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/object-mapper/src/main/java/com/example/objectmapper/sample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/object-mapper/src/main/java/dto/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/object-mapper/src/main/java/dto/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmap/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/objectmap/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmap/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmap/src/main/java/dto/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/java/dto/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmap/src/main/java/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/java/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmap/src/main/sample.json" beforeDir="false" afterPath="$PROJECT_DIR$/../spring/objectmap/src/main/sample.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/src/main/java/com/example/objectmapper/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/src/main/java/com/example/objectmapper/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/src/main/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper/src/main/resources/com/example/objectmapper/hello-view.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper2/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper2/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring/objectmapper2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring_boot/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/springboot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook/src/main/java/org/zerock/guestbook/controller/GuestbookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook/src/main/java/org/zerock/guestbook/controller/GuestbookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook/src/main/java/org/zerock/guestbook/entity/Guestbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook/src/main/java/org/zerock/guestbook/entity/Guestbook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook/src/main/resources/templates/guestbook/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook/src/main/resources/templates/guestbook/list.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2LzTZ5FoLR0561QN0CbS4G0boq6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,6 +97,13 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ]
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -43,12 +116,24 @@
       <updated>1676872963832</updated>
       <workItem from="1676872967086" duration="736000" />
       <workItem from="1676874047541" duration="777000" />
-      <workItem from="1678058928631" duration="91000" />
+      <workItem from="1676988515136" duration="369000" />
+      <workItem from="1678449933723" duration="664000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

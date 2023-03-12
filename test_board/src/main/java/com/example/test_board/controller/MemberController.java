@@ -6,13 +6,10 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-@Controller
+@RestController
 @RequestMapping("/member")
 @Log4j2
 public class MemberController {
@@ -27,10 +24,8 @@ public class MemberController {
     }
 
     @GetMapping("/LoginForm")
-    public String LoginForm() {
+    public void LoginForm() {
         log.info("로그인 페이지");
-
-        return "/member/LoginForm";
     }
 
     @PostMapping("/Login")
@@ -42,9 +37,8 @@ public class MemberController {
     }
 
     @GetMapping("/Register")
-    public String Register() {
+    public void Register() {
         log.info("회원가입 페이지");
-        return "/member/Register";
     }
 
     @PostMapping("/join")

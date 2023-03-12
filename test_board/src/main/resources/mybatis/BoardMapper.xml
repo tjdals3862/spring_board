@@ -2,17 +2,27 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.example.test_board.mapper.MemberMapper">
-    <select id="getXmlList" resultType="com.example.test_board.domain.Member">
-        select * from member
-    </select>
+<mapper namespace="com.example.test_board.mapper.BoardMapper">
 
-    <insert id="join" parameterType="com.example.test_board.domain.Member">
-        INSERT INTO member VALUES (#{id},#{email},#{name},#{password})
-    </insert>
-
-    <select id="boardList" resultType="list">
+    <select id="boardList" resultType="com.example.test_board.domain.Board">
         select * from board
     </select>
 
+    <insert id="boardAdd" parameterType="com.example.test_board.domain.Board">
+        INSERT INTO board (title, writer, comment, regdate)
+        VALUES (#{title}, #{writer}, #{comment}, DATE_FORMAT(now(), '%Y-%m-%d %h:%i'))
+    </insert>
+
+    <update id="boardUpdate" parameterType="com.example.test_board.domain.Board">
+        UPDATE board SET
+                         title = #{title},
+                         comment = #{comment},
+                         moddate = DATE_FORMAT(now(), '%Y-%m-%d %h:%i')
+        WHERE bno = #{bno}
+    </update>
+
+    <delete id="boardDelete" parameterType="com.example.test_board.domain.Board">
+        DELETE FROM board WHERE bno = #{bno}
+    </delete>
 </mapper>
+
