@@ -3,6 +3,7 @@ package com.example.test_board.controller;
 
 import com.example.test_board.domain.Board;
 import com.example.test_board.service.BoardServiceImpl;
+import com.google.gson.Gson;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,19 +31,29 @@ public class BoardController {
     }
 
     @GetMapping("/list")
-    public Map<String, Object> login(Model model) {
+    public String login(Model model) {
         Map<String, Object> result = new HashMap<>();
         log.info("게시물 전체 조회");
         List<Board> board = boardService.boardList();
         result.put("board", board);
-        return result;
+        Gson g = new Gson();
+        String temp = g.toJson(result);
+        return temp;
         //return "board/list";
     }
 
-    @PostMapping("listAdd")
+    @PostMapping("/listAdd")
     public void boardAdd(@RequestBody Board board) {
         log.info("게시물 추가");
         log.info(board);
         boardService.boardAdd(board);
     }
+
+    @GetMapping("/searchList")
+    public void searchList(@RequestParam int num, String search) {
+        log.info("게시물 검색");
+
+
+    }
+
 }

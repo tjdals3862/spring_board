@@ -11,9 +11,12 @@ import java.util.List;
 public interface BoardMapper {
     List<Board> boardList();
 
+    List<Board> boardSearchList();
+
     int boardAdd(Board board);
 
     int boardUpdate(Board board);
 
     int boardDelete(int bno);
+
 }

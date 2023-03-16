@@ -1,25 +1,16 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const BoardLists = (board) => {
-
-  const navigate = useNavigate();
-
-  const onClickdata = () => {
-    navigate(`/board/boardRead?bno=${board.board.bno}`);
-    
-  };
-
-  console.log(board)
+const BoardLists = ({board}) => {
 
   return (
     <>      
         <tr>
-          <td>{board.board.bno}</td>
-          <td onClick={onClickdata}>{board.board.title}</td>
-          <td>{board.board.writer}</td>
-          <td>{board.board.regdate}</td>
-          <td>{board.board.hit}</td>
+          <td>{board.bno}</td>
+          <td><Link to={"/board/boardRead/"+board.bno } >{board.title}</Link></td>
+          <td>{board.writer}</td>
+          <td>{board.regdate}</td>
+          <td>{board.hit}</td>
         </tr>
     </>
   )

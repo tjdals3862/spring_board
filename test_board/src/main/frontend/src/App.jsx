@@ -8,13 +8,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import BoardAdd from './component/board/BoardAdd';
 import BoardRead from './component/board/BoardRead';
+import KakaoAuth from './component/member/KakaoAuth';
 
 const App = () => {
-
-/*   const [board, setBoard] = useState([
-    { bno:1, title: 'test', writer: 'test', regdate:'2023-03-10', hit:0},
-    { bno:2, title: 'test', writer: 'test', regdate:'2023-03-11', hit:0},
-  ]); */
 
   const [board, setBoard] = useState([{
     bno: '',
@@ -31,17 +27,25 @@ const App = () => {
       .catch(error => console.log(error))
   }, []);
 
-  console.log(board);
+  const [accessToken, setAccessToken] = useState({});  
+  const aToken = (params) => {
+    setAccessToken(params)
+  }
+
+
 
   return (
     <>
       <Routes>
         <Route path='/' exact={true} element={<LoginPage />} />
-        <Route path='/board/list' exact={true} element={<BoardList boardList={board}/>} />
+        <Route path='/board/list' exact={true} element={<BoardList boardList={board} aToken={aToken} />} />
         <Route path='/board/boardAdd' exact={true} element={<BoardAdd />} />
-        <Route path='/board/BoardRead' exact={true} element={<BoardRead boardList={board}/>} />
-        <Route path='/member/LoginForm' exact={true} element={<LoginPage />} />
+        <Route path='/board/BoardRead/:bno' exact={true} element={<BoardRead boardList={board}/>} />
+        <Route path='/member/LoginForm' exact={true} element={<LoginPage />} />        
         <Route path='/member/Register' exact={true} element={<Register />} />
+        <Route path='/oauth/kakao/callback' exact={true} element={<KakaoAuth aToken={aToken} />} />
+
+        
       </Routes>
     </>
   )

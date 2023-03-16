@@ -10,6 +10,7 @@ public interface BoardService {
      List<Board> boardList();
 
      // 게시판 검색
+    List<Board> boardSearchList();
 
     // 게시판 추가
     int boardAdd(Board board);

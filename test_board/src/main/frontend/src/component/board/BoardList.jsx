@@ -4,13 +4,21 @@ import Bottom from '../include/Bottom'
 import Header from '../include/Header'
 import BoardLists from './BoardLists'
 import BoardPagination from './BoardPagination'
+import BoardSearch from './BoardSearch'
 
-const BoardList = (boardList) => {
-  const board = boardList.boardList; 
+const BoardList = ({boardList,aToken}) => {
+  const board = boardList; 
+
+  const test = (params) => {
+    aToken(params)    
+  }
+
+  test()
+
   return (
     
     <>
-      <Header/>
+      <Header/>          
         <Table striped bordered hover>
           <thead>
           <tr>
@@ -27,6 +35,7 @@ const BoardList = (boardList) => {
               ))}           
           </tbody>          
         </Table>
+        <BoardSearch/>    
         <BoardPagination/>
       <Bottom/>
     </>

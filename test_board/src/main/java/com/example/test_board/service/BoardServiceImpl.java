@@ -25,6 +25,14 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
+    public List<Board> boardSearchList() {
+        List<Board> boardList = null;
+        boardList = boardMapper.boardSearchList();
+        log.info("boardList : "+ boardList);
+        return boardList;
+    }
+
+    @Override
     public int boardAdd(Board board) {
         int result = 0;
         result = boardMapper.boardAdd(board);
