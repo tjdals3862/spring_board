@@ -11,9 +11,7 @@ const KakaoAuth = ({aToken}) => {
     const client_id = `${process.env.REACT_APP_KAKAO_API_KEY}`
     const REDIRECT_URI = 'http://localhost:3000/oauth/kakao/callback';
 
-    const [accessToken, setAccessToken] = useState();  
-
-    const test = (params) => {
+    const LoginCheck = (params) => {
       aToken(params)
     }
 
@@ -30,20 +28,17 @@ const KakaoAuth = ({aToken}) => {
       )
       .then((res) => {
         console.log(res);
-        console.log(res.data.access_token)
-        test(res.data.access_token)
-        setAccessToken(res.data.access_token)
+        const at = res.data.access_token
+        console.log(at)
+        LoginCheck(at)
         
-        if(accessToken) {
-          console.log(accessToken)
+        if(at) {
           navigate("/board/list")
         } else {
           console.log("로그인 실패")
-          console.log(accessToken)
-          navigate("/")
+          navigate("/member/LoginForm")
         }   
-      })  
-
+      })
     }, []);
 
 

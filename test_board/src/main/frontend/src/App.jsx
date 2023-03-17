@@ -27,9 +27,10 @@ const App = () => {
       .catch(error => console.log(error))
   }, []);
 
-  const [accessToken, setAccessToken] = useState({});  
+  const [accessToken, setAccessToken] = useState("");  
   const aToken = (params) => {
     setAccessToken(params)
+    console.log(accessToken)
   }
 
 
@@ -38,9 +39,9 @@ const App = () => {
     <>
       <Routes>
         <Route path='/' exact={true} element={<LoginPage />} />
-        <Route path='/board/list' exact={true} element={<BoardList boardList={board} aToken={aToken} />} />
-        <Route path='/board/boardAdd' exact={true} element={<BoardAdd />} />
-        <Route path='/board/BoardRead/:bno' exact={true} element={<BoardRead boardList={board}/>} />
+        <Route path='/board/list' exact={true} element={<BoardList boardList={board} accessToken={accessToken} />} />
+        <Route path='/board/boardAdd' exact={true} element={<BoardAdd aToken={aToken}/>} />
+        <Route path='/board/BoardRead/:bno' exact={true} element={<BoardRead boardList={board} aToken={aToken}/>} />
         <Route path='/member/LoginForm' exact={true} element={<LoginPage />} />        
         <Route path='/member/Register' exact={true} element={<Register />} />
         <Route path='/oauth/kakao/callback' exact={true} element={<KakaoAuth aToken={aToken} />} />
