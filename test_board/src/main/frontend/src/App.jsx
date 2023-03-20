@@ -41,7 +41,7 @@ console.log(board);
         <Route path='/' exact={true} element={<LoginPage />} />
         <Route path='/board/list' exact={true} element={<BoardList boardList={board} accessToken={accessToken} />} />
         <Route path='/board/boardAdd' exact={true} element={<BoardAdd aToken={aToken}/>} />
-        <Route path='/board/BoardRead/:bno' exact={true} element={<BoardRead boardList={board} aToken={aToken}/>} />
+        <Route path='/board/BoardRead' exact={true} element={<BoardRead boardList={board} aToken={aToken}/>} />
         <Route path='/member/LoginForm' exact={true} element={<LoginPage />} />        
         <Route path='/member/Register' exact={true} element={<Register />} />
         <Route path='/oauth/kakao/callback' exact={true} element={<KakaoAuth aToken={aToken} />} />
