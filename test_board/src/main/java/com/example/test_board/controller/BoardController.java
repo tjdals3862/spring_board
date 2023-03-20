@@ -50,10 +50,15 @@ public class BoardController {
     }
 
     @GetMapping("/searchList")
-    public void searchList(@RequestParam int num, String search) {
+    public String searchList(@RequestParam Map<String, Object> pMap) {
+        Map<String, Object> result = new HashMap<>();
         log.info("게시물 검색");
-
-
+        log.info(pMap);
+        List<Board> board = boardService.boardSearchList(pMap);
+        result.put("board", board);
+        Gson g = new Gson();
+        String temp = g.toJson(result);
+        return temp;
     }
 
 }

@@ -20,7 +20,7 @@ const App = () => {
     regdate: '',
     hit: ''
 }]);
-
+console.log(board);
   useEffect(() => {
       axios.get('/board/list')
       .then(response => setBoard(response.data.board))

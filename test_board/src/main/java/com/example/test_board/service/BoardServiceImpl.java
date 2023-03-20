@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Log4j2
@@ -25,9 +26,10 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public List<Board> boardSearchList() {
+    public List<Board> boardSearchList(Map<String, Object> pMap) {
         List<Board> boardList = null;
-        boardList = boardMapper.boardSearchList();
+        log.info(pMap);
+        boardList = boardMapper.boardSearchList(pMap);
         log.info("boardList : "+ boardList);
         return boardList;
     }

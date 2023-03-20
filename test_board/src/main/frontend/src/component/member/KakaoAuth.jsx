@@ -5,8 +5,8 @@ const KakaoAuth = ({aToken}) => {
     //const code = new URL(window.location.href).searchParams.get("code");
     const navigate = useNavigate();
 
-    const params = new URL(window.location.href).searchParams;
-    const code = params.get("code");
+    let params = new URL(window.location.href).searchParams;
+    let code = params.get("code");
     const grant_type = "authorization_code";
     const client_id = `${process.env.REACT_APP_KAKAO_API_KEY}`
     const REDIRECT_URI = 'http://localhost:3000/oauth/kakao/callback';

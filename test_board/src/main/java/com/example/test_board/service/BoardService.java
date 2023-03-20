@@ -3,6 +3,7 @@ package com.example.test_board.service;
 import com.example.test_board.domain.Board;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BoardService {
 
@@ -10,7 +11,7 @@ public interface BoardService {
      List<Board> boardList();
 
      // 게시판 검색
-    List<Board> boardSearchList();
+    List<Board> boardSearchList(Map<String, Object> pMap);
 
     // 게시판 추가
     int boardAdd(Board board);

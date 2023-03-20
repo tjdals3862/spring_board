@@ -8,13 +8,14 @@
         select * from board
     </select>
 
-    <select id="boardSearchList" resultType="com.example.test_board.domain.Board">
+    <select id="boardSearchList" parameterType="java.util.HashMap" resultType="com.example.test_board.domain.Board">
         select * from board
-        <if test ='num = 1'>
-            AND title = #{title}
+        WHERE bno > 0
+        <if test ='u_select == 1 and u_search != ""'>
+            AND title = #{u_search}
         </if>
-        <if test ='num = 2'>
-            AND writer = #{writer}
+        <if test ='u_select == 2 and u_search != ""'>
+            AND writer = #{u_search}
         </if>
     </select>
 
