@@ -1,29 +1,36 @@
 import React, { useEffect, useState } from 'react'
 import { Table } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
 import Bottom from '../include/Bottom'
 import Header from '../include/Header'
 import BoardLists from './BoardLists'
 import BoardPagination from './BoardPagination'
 import { Form,Button, Col, Row } from 'react-bootstrap'
 import axios from 'axios'
-import { atom, useRecoilState } from 'recoil'
 
+const BoardList = ({accessToken}) => {
 
-const BoardList = ({boardList,accessToken}) => {
-  //let board = boardList; 
-  
-  const navigate = useNavigate();
+  const [board, setBoard] = useState([{
+    bno: '',
+    title: '',
+    writer: '',
+    content: '',
+    regdate: '',
+    hit: ''
+}]);
 
-  const [searchBoard, setSearchBoard] = useState(boardList);
-  
+  useEffect(() =>  {
+    axios.get('/board/list')
+      .then(response => setBoard(response.data.board))
+      .catch(error => console.log(error))
+  }, []);
+
   const Search = () => {        
     const u_search = document.getElementById('search').value
     const u_select = document.getElementById('select').value // 1: 제목 2: 작성자
 
     const userData = async () => {
       await axios.get(`/board/searchList?u_search=${u_search}&u_select=${u_select}`)
-      .then(response => setSearchBoard(response.data.board))
+      .then(response => setBoard(response.data.board))
     }
     userData();
     //board = searchBoard;
@@ -47,7 +54,7 @@ const BoardList = ({boardList,accessToken}) => {
           </tr>
           </thead>
           <tbody >            
-            { searchBoard.map((list,index) => (
+            { board.map((list,index) => (
                 <BoardLists board={list} key={index}/>
               ))}           
           </tbody>          

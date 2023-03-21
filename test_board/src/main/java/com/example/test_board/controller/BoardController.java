@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+
 @RequestMapping("/board")
 @Log4j2
 @RequiredArgsConstructor
